@@ -4,8 +4,7 @@ import pytest
 @pytest.yield_fixture(scope="session")
 def app():
     from app import app
-    with app.app_context():
-        yield app
+    yield app.test_client()
 
 
 @pytest.yield_fixture(scope="session")
