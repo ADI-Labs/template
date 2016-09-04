@@ -1,13 +1,13 @@
 #!/bin/bash
 
-export HOST="0.0.0.0"
-export PORT="5000"
-export SECRET_KEY="it's a secret"
-
+export FLASK_APP="run.py"
+export FLASK_HOST="0.0.0.0"
+export FLASK_PORT="5000"
+export FLASK_SECRET_KEY="it's a secret"
 
 export PG_USER="adi"
 export PG_PASSWORD="adi"
-export PG_DB="density"
+export PG_DB="app"
 export PG_HOST="localhost"
 export PG_PORT="5432"
 
