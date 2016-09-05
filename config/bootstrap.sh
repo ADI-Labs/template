@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# Install postgresql-9.5
+# Install postgresql
 PG_REPO_APT_SOURCE=/etc/apt/sources.list.d/pdgd.list
 if [ ! -f $PG_REPO_APT_SOURCE ]; then
     echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" > "$PG_REPO_APT_SOURCE"
@@ -10,7 +10,7 @@ fi
 
 apt-get update && apt-get --yes upgrade
 apt-get install --yes \
-    postgresql-9.5
+    postgresql-9.4
 sudo -u postgres psql < /vagrant/config/setup.sql
 
 if [ ! -d "/opt/conda" ]; then
