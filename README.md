@@ -1,5 +1,8 @@
 # ADI Labs Template
 
+[![Build Status](https://travis-ci.org/ADI-Labs/template.svg?branch=master)](https://travis-ci.org/ADI-Labs/template)
+[![Coverage Status](https://coveralls.io/repos/github/ADI-Labs/template/badge.svg?branch=master)](https://coveralls.io/github/ADI-Labs/template?branch=master)
+
 This is a template for ADI Labs projects, using our default tech stack
 (Python / Flask / Postgres). It has automated testing, linting, and code
 coverage reports already set-up for you.
