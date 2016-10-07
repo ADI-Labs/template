@@ -19,7 +19,8 @@ flask develop
 
 We use [https://www.vagrantup.com/](Vagrant) and
 [https://www.virtualbox.org/](Virtualbox) to set up our development
-environment. After installing Vagrant, you'll want to run:
+environment. After installing Vagrant, you'll want to navigate to
+the project directory and run:
 
 ```bash
 vagrant up
@@ -47,9 +48,12 @@ to run `flask deploy` instead of `flask run` to access your app on your
 host (non-VM) computer.
 
 We also provide convenient a `flask pgcli` command that will open up a
-[http://pgcli.com/](pgcli) shell to your postgres database (in case you
+[pgcli](http://pgcli.com/) shell to your postgres database (in case you
 need to munge around for a little) and a `flask setup` which will setup
 the database for you.
+
+For a full list of commands, you can always use the `--help` flag (e.g.
+`flask --help`)
 
 ## Testing
 
